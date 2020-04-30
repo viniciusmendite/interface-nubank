@@ -1,8 +1,14 @@
 import React from 'react';
-import {View} from 'react-native';
+import {StatusBar} from 'react-native';
 
-// import { Container } from './styles';
+import Header from '../components/Header';
+import {Container} from './styles';
 
 export default function Main() {
-  return <View />;
+  return (
+    <Container>
+      <StatusBar barStyle="light-content" backgroundColor="#8b10ae" />
+      <Header />
+    </Container>
+  );
 }
