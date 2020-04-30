@@ -7,9 +7,16 @@ import arrowDownWard from '../../assets/material-icons/arrow-downward.png';
 import arrowUpWard from '../../assets/material-icons/arrow-upward.png';
 import lock from '../../assets/material-icons/lock.png';
 
-export default function Tabs() {
+export default function Tabs({translateY}) {
   return (
-    <Container>
+    <Container
+      style={{
+        opacity: translateY.interpolate({
+          inputRange: [0, 320],
+          outputRange: [1, 0.3],
+          extrapolate: 'clamp',
+        }),
+      }}>
       <TabsContainer>
         <TabItem>
           <Icon source={personAdd} />
