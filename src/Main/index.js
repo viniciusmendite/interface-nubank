@@ -6,6 +6,8 @@ import visibilityOff from '../assets/material-icons/money-off.png';
 
 import Header from '../components/Header';
 import Tabs from '../components/Tabs';
+import Menu from '../components/Menu';
+
 import {
   Container,
   Content,
@@ -26,6 +28,7 @@ export default function Main() {
       <Header />
 
       <Content>
+        <Menu />
         <Card>
           <CardHeader>
             <Icon source={attachMoney} />
